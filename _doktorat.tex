@@ -1,0 +1,135 @@
+\documentclass[12pt,a4paper,openany,oneside,leqno,titlepage]{report}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{dsfont} % dla \mathds{} - trzeba zainstalować
+\usepackage{multirow}
+\usepackage[greek,english,polish]{babel}
+\usepackage[utf8]{inputenc} % albo cp1250
+\usepackage[T1]{fontenc}
+\usepackage{purbthesis} % paczka przygotowana przez Piotra Urbańczyka mailto: p.m.urbanczyk@gmail.com
+%\usepackage{appendix}
+\selectlanguage{polish}
+
+%%%%%%%%%%%%%%%%%%%
+
+
+%---------hyperrefs-----------
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{hyperref} %to nowsza wersja pakietu url, lepsza m.in. robie linki hyperref
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black, breaklinks=true, linktocpage}  %to sprawia że nie widać w pdfie aktywnych linków
+\urlstyle{rm}
+%---------------------------------------------------
+
+
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage{footmisc}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={150mm,237mm},
+ left=30mm,
+ top=30mm,
+ }
+
+
+\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
+
+\makeatletter
+\renewcommand\small{%
+	\@setfontsize\small{11}{15}%
+	\abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+	\abovedisplayshortskip \z@ \@plus3\p@
+	\belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+	\def\@listi{\leftmargin\leftmargini
+		\topsep 6\p@ \@plus2\p@ \@minus2\p@
+		\parsep 3\p@ \@plus2\p@ \@minus\p@
+		\itemsep \parsep}%
+	\belowdisplayskip \abovedisplayskip
+}
+
+%\renewcommand\footnotesize{%
+%	\@setfontsize\footnotesize{8.3}{11}%
+%	\abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+%	\abovedisplayshortskip \z@ \@plus\p@
+%	\belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+%	\def\@listi{\leftmargin\leftmargini
+%		\topsep 4\p@ \@plus2\p@ \@minus2\p@
+%		\parsep 2\p@ \@plus\p@ \@minus\p@
+%		\itemsep \parsep}%
+%	\belowdisplayskip \abovedisplayskip
+%}
+
+\makeatother
+
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows,calc}
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+
+\usepackage{float}
+
+
+%\newcommand{\captionfonts}{\small} %wydaje sie, ze nie dziala
+\usepackage[font={small},singlelinecheck=false]{caption}
+
+
+%%%%%%%%%%%%%%%%%%%
+
+
+\newtheorem{tw}{Twierdzenie}[section]
+\newtheorem{lem}[tw]{Lemat}
+
+\theoremstyle{definition}
+\newtheorem{defin}{Definicja}[section]
+
+\renewcommand{\normalsize}{\fontsize{13}{18}\selectfont}
+
+
+\usepackage{graphicx}
+
+
+\title{Wybrane logiczne aspekty\\teologii apofatycznej}
+\author{Piotr Urbańczyk}
+
+\uczelnia{Uniwersytet Papieski Jana Pawła II w~Krakowie}
+\wydzial{Wydział Filozoficzny}
+%\promotor{ks. dr hab. Adam Olszewski}
+\promotordop{ks. dra hab. Adama Olszewskiego} % 'promotor' w genetivie
+\praca{doktorska} % licencjacka/magisterska/
+\rok{2022}
+\miejsce{Kraków}
+
+\draft
+
+
+
+
+\begin{document}
+
+%\interliniatexowa{1.2}
+\stronatytulowa
+
+\tableofcontents
+%\listoffigures
+
+\cleardoublepage
+
+\part{Aspekt semantyczny}
+%\include{1_milczenie_1_wprowadzenie.tex}
+\include{1_milczenie_all.tex}
+
+
+
+%\include{_draft9.tex}
+%\include{_draft_bibliografia.tex}
+
+
+\end{document}
