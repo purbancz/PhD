@@ -297,78 +297,121 @@ Jeśli wszystkie zdania prawdziwe są co do zasady poznawalne, to wszystkie zdan
 \end{tw}
 
 By udowodnić twierdzenie \ref{scep-par-cf-parpozn} należy zadać pewne (bardzo skromne logicznie) warunki na działanie modalnego operatora $K$. Musimy założyć rozdzielność $K$~względem koniunkcji:
-
-(M) K(A ${\wedge}$ B) {213} (KA ${\wedge}$ KA).
-
-Oznacza to, że ilekroć mamy wiedzę o~koniunkcji dwóch zdań, wiemy o~każdym z~jej członów. Musimy też przyjąć regułę (T), według której wiedza dotyczy zawsze zdań prawdziwych:
-
+%(M) K(A ${\wedge}$ B) {213} (KA ${\wedge}$ KA).
+\begin{flalign}
+& K(A \land B) \to (KA \land KA). &\tag{\textsf{M}}\label{ruleM}
+\end{flalign}
+Oznacza to, że ilekroć mamy wiedzę o~koniunkcji dwóch zdań, wiemy o~każdym z~jej członów. Musimy też przyjąć regułę \eqref{ruleT}, według której wiedza dotyczy zawsze zdań prawdziwych:
 (T) KA -{\textgreater} A,
-
+\begin{flalign}
+& KA \to A, &\tag{\textsf{T}}\label{ruleT}
+\end{flalign}
 co znów odpowiada klasycznej koncepcji wiedzy, wedle której jest ona \textit{prawdziwym} i~uzasadnionym przekonaniem.
 
-Wróćmy na moment do zdania \ref{scep- par-KNT-bis} i~sytuacji teologicznego sceptycyzmu. Oba powyższe aksjomaty wystarczają, by udowodnić, że zdanie to jest fałszywe a~teologiczny sceptycyzm jest teorią sprzeczną.
-
-Lemat {\textbackslash}neg K(A {\textbackslash}land {\textbackslash}neg K~A)\label{scep-par-cf-lemat}
-
-Dowód z~belgii lub art.
-
-Zatem, jak pokazuje powyższy lemat, nie możemy mieć wiedzy o~zdaniach w~stylu Moore'a. Stawiając tę sprawę w~kontekście teorii Niepoznawalnego: nawet jeśli istnieją jakieś nieznane nam prawdy (o Bogu), nie moglibyśmy o~tym wiedzieć. Staje się to jasne, gdy prześledzimy dalsze fragmenty dowodu twierdzenia \ref{scep-par-cf-parpozn}. Najpierw jednak przedstawmy je w~bardziej formalnym zapisie\footnote{Przy takiej notacji twierdzeniu \ref{scep-par-cf-fitch} odpowiada wyrażenie $p \land \neg K p \vdash p \land \neg \Diamond K p$. W~badaniach wokół paradoksu poznawalności najczęściej stosuje się kwantyfikację po zmiennych zdaniowych. W~takim zapisie twierdzenia \ref{scep-par-cf-fitch} oraz \ref{scep-par-cf-parpozn} przyjmują następującą postać: $\exists p (p \land \neg K p) \vdash \exists p (p \land \neg \Diamond K p)$ oraz $\forall p (p \to \Diamond K p) \vdash \forall p (p \to K p)$. Nie jest to standardowa notacja, więc korzystam z~tego, że w~obrębie moich rozważań można pominąć kwantyfikatory bez straty sensu twierdzenia i~poprawności jego dowodu.}:
-
-Twierdzenie $A~\to \Diamond K~A \vdash A~\to K~A$.\label{scep-par-cf-unkno}
-
+Wróćmy na moment do zdania \ref{scep-par-KNT-bis} i~sytuacji teologicznego sceptycyzmu. Oba powyższe aksjomaty wystarczają, by udowodnić, że zdanie to jest fałszywe a~teologiczny sceptycyzm jest teorią sprzeczną.
+%Lemat {\textbackslash}neg K(A {\textbackslash}land {\textbackslash}neg K~A)\label{scep-par-cf-lemat}
+%Dowód z~belgii lub art.
+\begin{lem}\label{scep-par-cf-lemat}
+$\neg K(A \land \neg K~A)$
+\end{lem}
+\begin{proof}
+\begin{flalign}
+& K (A \land \neg K A) & \text{(założenie, \ref{scep-par-KNT-bis})}\label{lematK1} \\
+& K A \land K \neg K A & \text{(MP \ref{lematK1}, \ref{ruleM})}\label{lematK2} \\
+& K A & (\land\text{ elim. \ref{lematK2})}\label{lematK3} \\
+& K \neg K A & (- | | -)\label{lematK4} \\
+& \neg K A & \text{(MP \ref{lematK4}, \ref{ruleT})}\label{lematK5} \\
+& \neg K (A \land \neg K A) & \text{(\ref{lematK1}, \ref{lematK3}, \ref{lematK5}, reductio ad absurdum)}\qedhere
+\end{flalign}
+\end{proof}
+Zatem, jak pokazuje powyższy lemat, nie możemy mieć wiedzy o~zdaniach w~stylu Moore'a. Stawiając tę sprawę w~kontekście teorii Niepoznawalnego: nawet jeśli istnieją jakieś nieznane nam prawdy (o Bogu), nie moglibyśmy o~tym wiedzieć. Staje się to jasne, gdy prześledzimy dalsze fragmenty dowodu twierdzenia \ref{scep-par-cf-parpozn}. Najpierw jednak przedstawmy je w~bardziej formalnym zapisie\footnote{Przy takiej notacji twierdzeniu \ref{scep-par-cf-fitch} odpowiada wyrażenie $p \land \neg K p \vdash p \land \neg \Diamond K p$. W~badaniach wokół paradoksu poznawalności najczęściej stosuje się kwantyfikację po zmiennych zdaniowych. W~takim zapisie twierdzenia \ref{scep-par-cf-fitch} oraz \ref{scep-par-cf-parpozn} przyjmują następującą postać: $\exists p (p \land \neg K p) \vdash \exists p (p \land \neg \Diamond K p)$ oraz $\forall p (p \to \Diamond K p) \vdash \forall p (p \to K p)$. Nie jest to standardowa notacja, więc korzystam z~tego, że w~obrębie przedstawianych tu rozważań można pominąć kwantyfikatory bez utraty sensu twierdzenia oraz poprawności jego dowodu.}:
+%Twierdzenie $A~\to \Diamond K~A \vdash A~\to K~A$.\label{scep-par-cf-unkno}
+\begin{tw}\label{scep-par-cf-unkno}
+$A \to \Diamond K A \vdash A \to K A$
+\end{tw}
 W~powyższej formule pojawia się dodatkowy symbol -- $\Diamond$. Stosowany jest tu w~standardowy, znany z~modalnej logiki aletycznej, sposób -- na oznaczenie operatora możliwości. Dualnym do operatora możliwości jest operator konieczności ($\square$). $\Diamond p$~oznacza ,,jest możliwe, że $p$'', $\square p$ czytamy jako ,,konieczne, że $p$''. Wyrażenie o~postaci $\Diamond K p$ odczytywane jako ,,jest możliwe, by wiedzieć, że $p$'' wydaje się dobrze oddawać intuicje towarzyszące stwierdzeniu, że sąd stojący za zdaniem $p$~jest \textit{poznawalny}. Zatem kolejny raz mamy tu do czynienia z~rachunkiem multimodalnym. Tym razem rachunkiem próbującym rekonstruować sytuacje, w~których mamy do czynienia z~wiedzą, oraz możliwością i~koniecznością lub, inaczej mówiąc, rachunek ten aspiruje do oddania głębszej struktury pojęcia poznawalności oraz zależności między zdaniami poznawalnymi a~zdaniami znanymi i~prawdziwymi. Wprowadzając dwa dodatkowe symbole ponownie musimy dodać wyrażenia o~postaci $\Diamond A$~oraz $\square A$~do zbioru wyrażeń sensownych naszego nowego, multimodalnego rachunku. By dowieść twierdzenia \ref{scep-par-cf-unkno} należy założyć, że zachowaniem tych dwóch operatorów rządzą znów niepozorne i~dobrze znane reguły logiki aletycznej:
+%
+%(Reguła wymuszania) reguła oraz
+%
+%$(\square \neg -\neg \Diamond) \square \neg A~\to \neg \Diamond A.$
 
-(Reguła wymuszania) reguła oraz
+\begin{flalign}
+& \frac{A}{\square A} & \tag{RW}\label{necessitation-rule} \\[10pt]
+\quad& \square \neg A~\to \neg \Diamond A. & \tag{$\square$ elim.}\label{nec-elim-rule}
+\end{flalign}
 
-$(\square \neg -\neg \Diamond) \square \neg A~\to \neg \Diamond A.$
+Pierwsza z~wymienionych zasad każe uznać, że twierdzeniem jest wyrażenie $\square A$, o~ile $A$~jest już wcześniej udowodnionym twierdzeniem. Druga zasada mówi, że koniecznie fałszywe sądy są niemożliwe i~wynika wprost z~dualności operatorów $\Diamond$ i~$\square$. Mając te dwie zasady oraz lemat \ref{scep-par-cf-lemat} możemy podać dowód twierdzenia \ref{scep-par-cf-unkno}\footnote{Por. H. Wansing, \textit{Diamonds Are a~Philosopher's Best Friends: The Knowability Paradox and Modal Epistemic Relevance Logic}, ,,Journal of Philosophical Logic'', vol. 31 (2002), p. 593; W.H. Holliday, \textit{Epistemic Logic and Epistemology}, [w:] \textit{Introduction to Formal Philosophy}, red. S.O. Hansson, V.F. Hendricks, Springer, Cham 2018, p. 364.}.
+%Dowód. Chyba cały na schematach.
+\begin{proof}
+\begin{flalign}
+& A \to \Diamond K A 							& \text{(założenie)}\label{twwierF1} \\
+& (A \land \neg K A) \to \Diamond K	(A \land \neg K A)		& \text{(\ref{twwierF1})}\label{twwierF2} \\
+& \square \neg K(A \land \neg K~A)				& \text{(\ref{necessitation-rule}  \ref{scep-par-cf-lemat})}\label{twwierF3} \\
+& \neg \Diamond  K(A \land \neg K~A)			&\text{(\ref{nec-elim-rule} \ref{twwierF3})}\label{twwierF4} \\
+& \neg (A \land \neg K A)								& \text{(p. kontrapozycji \ref{twwierF2}, \ref{twwierF4})}\label{twwierF5}\\
+& A \to K A  									& \text{(p. negacji implikacji \ref{twwierF5})}\qedhere
+\end{flalign}
+\end{proof}
 
-Pierwsza z~wymienionych zasad każe uznać, że twierdzeniem jest wyrażenie $\square A$, o~ile A~jest już wcześniej udowodnionym twierdzeniem. Druga zasada mówi, że koniecznie fałszywe sądy są niemożliwe i~wynika wprost z~dualności operatorów $\Diamond$ i~$\square$. Mając te dwie zasady oraz lemat \ref{scep-par-cf-lemat} możemy podać dowód twierdzenia \ref{scep-par-cf-unkno}\footnote{Por. H. Wansing, \textit{Diamonds Are a~Philosopher's Best Friends: The Knowability Paradox and Modal Epistemic Relevance Logic}, ,,Journal of Philosophical Logic'', vol. 31 (2002), p. 593; W.H. Holliday, \textit{Epistemic Logic and Epistemology}, [w:] \textit{Introduction to Formal Philosophy}, red. S.O. Hansson, V.F. Hendricks, Springer, Cham 2018, p. 364.}.
+Twierdzenie \ref{scep-par-cf-parpozn} i~(a, co za tym idzie, \ref{scep-par-cf-unkno}) uznawane jest za paradoksalne, ponieważ wychodząc od stosunkowo niepozornego założenia -- że wszystkie prawdy są poznawalne -- oraz wykorzystując naturalne i~logicznie niekontrowersyjne reguły rządzące operatorami $K$~oraz $\Diamond$ dochodzimy do nieoczekiwanie silnego i~trudnego do przyjęcia wniosku -- że wszystkie prawdy są znane\footnote{Podobnie paradoksalne wydaje się przejście od istnienia przypadkowej ignorancji do istnienia koniecznej niepoznawalności w~twierdzeniu \ref{scep-par-cf-fitch}.}. Inaczej mówiąc, twierdzenie to i~jego dowód wydają się paradoksalne dlatego, że zdają się sprowadzać stosunkowo słabe założenie o~poznawalności prawdy, do sytuacji wszechwiedzy.
 
-Dowód. Chyba cały na schematach.
-
-Twierdzenie \ref{scep-par-cf-parpozn} i~(a, co za tym idzie, \ref{scep-par-cf-unkno}) uznawane jest za paradoksalne, ponieważ wychodząc od stosunkowo niepozornego założenia– że wszystkie prawdy są poznawalne -- oraz wykorzystując naturalne i~logicznie niekontrowersyjne reguły rządzące operatorami $K$~oraz $\Diamond$ dochodzimy do nieoczekiwanie silnego i~trudnego do przyjęcia wniosku -- że wszystkie prawdy są znane\footnote{Podobnie paradoksalne wydaje się przejście od istnienia przypadkowej ignorancji do istnienia koniecznej niepoznawalności w~twierdzeniu \ref{scep-par-cf-fitch}.}. Inaczej mówiąc twierdzenie to i~jego dowód wydają się paradoksalne dlatego, że zdają się sprowadzać stosunkowo słabe założenie o~poznawalności prawdy, do sytuacji wszechwiedzy.
-
-Mimo, iż praca Fitcha została sporządzona w~celu analizy pojęcia wartości, paradoks poznawalności nigdy potem nie był używany w~podobnym kontekście. Od początku lat 80. wykorzystywany jest on najczęściej jako argument w~sporze realistów epistemicznych z~tzw. antyrealistami, którzy -- mimo iż przyjmują istnienie nieznanych sądów prawdziwych -- odrzucają ich jakąś zasadniczą niepoznawalność. Paradoks Churcha-Fitcha stosowany jest więc w~próbach obalenia tych teorii, które zakładają jakąś wersję zasady poznawalności (zgodnie z~którą wszystkie sądy prawdziwe są poznawalne). Wśród nich można wymienić choćby semantyczny realizm Michaela Dummetta, realizm wewnętrzny Hilarego Putnama, czy logiczny pozytywizm Koła Wiedeńskiego\footnote{Przegląd argumentów przeciw takim teoriom można znaleźć w: J. Salerno (red.), N\textit{ew Essays on the Knowability Paradox},-Oxford University Press, New York 2009, część II.}. Uogólniona postać paradoksu Churcha-Fitcha nadaje się także do uchwycenia innych samozwrotnych aporii, pozbawionych kontekstu poznawalności -- tworzonych także w~kontekście teologicznym\footnote{Zob. Tenże, \textit{Introduction}, [w:] Tamże, s.~4.}.
+Mimo, iż praca Fitcha została sporządzona w~celu analizy pojęcia wartości, paradoks poznawalności nigdy potem nie był używany w~podobnym kontekście. Od początku lat 80. wykorzystywany jest on najczęściej jako argument w~sporze realistów epistemicznych z~tzw. antyrealistami, którzy -- mimo iż przyjmują istnienie nieznanych sądów prawdziwych -- odrzucają ich jakąś zasadniczą niepoznawalność. Paradoks Churcha-Fitcha stosowany jest więc w~próbach obalenia tych teorii, które zakładają jakąś wersję zasady poznawalności (zgodnie z~którą wszystkie sądy prawdziwe są poznawalne). Wśród tych teorii wymienić należy choćby semantyczny realizm Michaela Dummetta, realizm wewnętrzny Hilarego Putnama, czy logiczny pozytywizm Koła Wiedeńskiego\footnote{Przegląd argumentów przeciw takim teoriom można znaleźć w: J. Salerno (red.), N\textit{ew Essays on the Knowability Paradox},-Oxford University Press, New York 2009, część II.}. Uogólniona postać paradoksu Churcha-Fitcha nadaje się także do uchwycenia innych samozwrotnych aporii, pozbawionych kontekstu poznawalności -- tworzonych także w~kontekście teologicznym\footnote{Zob. Tenże, \textit{Introduction}, [w:] Tamże, s.~4.}.
 
 \section{Paradoks znawcy (knower's paradox)}
 
 Genezą paradoksu znawcy są rozważania dotyczące paradoksu kata (zwanego także paradoksem niespodziewanego testu\footnote{To dwie najpopularniejsze polskojęzyczne nazwy tego problemu. W~literaturze angielskiej jest ich jeszcze więcej.}).
 
-Paradoks kata (niespodziewanego testu)
+\subsubsection{Paradoks kata (niespodziewanego testu)}
 
 Wyobraźmy sobie, że sędzia skazuje oskarżonego na karę śmierci, która ma zostać wykonana w~przyszłym tygodniu w~południe w~dniu, w~którym skazany nie będzie się tego spodziewał. Wydaje się, że taki wyrok nie może zostać wykonany. Skazany nie może zostać stracony w~niedzielę, bo jeśli przeżyje do sobotniego popołudnia, będzie musiał spodziewać się wykonania kary w~niedzielę. Nie może zostać stracony w~sobotę, bo jeśli przeżyje do piątkowego popołudnia a~niedzielę należy wykluczyć jako dzień wymierzenia kary, musiałby się spodziewać wykonania wyroku w~sobotę, co znów jest sprzeczne z~literą orzeczenia sądu. Z~tego samego powodu nie może zostać stracony w~piątek, czwartek, środę i~wtorek. W~końcu, wyroku nie można wykonać i~w poniedziałek, bo -- skoro skazany nie może zostać stracony we wszystkie pozostałe dni tygodnia -- musiałby się spodziewać, że karę wymierzą mu właśnie w~ten dzień.
 
+\bigskip
+
 Powyższa historia uważana jest za paradoksalną, ponieważ wniosek z~niej płynący przeczy naszym najogólniejszym intuicjom, które zdają się podpowiadać, że kat powinien móc zaskoczyć skazanego przeprowadzając niespodziewaną egzekucję (na przykład, dajmy na to, w~czwartek). Paradoks ten sam w~sobie jest interesującym zagadnieniem i~doczekał się rozmaitych odmian i~wariacji oraz bogatej literatury. W~przełomowej pracy David Kaplan i~Richard Montague\footnote{D. Kaplan, R. Montague, \textit{A~paradox regained}, ,,Notre Dame Journal of Formal Logic'', vol. 1 (1960), nr 3, ss.~79-90.} manipulują liczbą dni, w~których należy rozpatrywać możliwość wykonania wyroku. Okazuje się, że przy zredukowaniu tej liczby do zera, paradoks kata przeobraża się w~zdanie w~stylu paradoksu kłamcy angażujące już nie semantyczne pojęcie prawdy, lecz epistemiczne pojęcie wiedzy.
+%({\textbackslash}lambda)Zdanie (lambda) jest nieznane.\label{scep-klamca}
+\begin{flalign*}
+		& \text{Zdanie $\lambda$ jest nieznane.} &\tag{$\lambda$}\label{scep-klamca}
+\end{flalign*}
 
-({\textbackslash}lambda)Zdanie (lambda) jest nieznane.\label{scep-klamca}
+Aby pokazać autoreferencyjność tego zdania załóżmy najpierw, że \ref{scep-klamca} jest znane. Następnie -- zakładając, że obowiązuje aksjomat \eqref{ruleT} -- musimy uznać, że \ref{scep-klamca} jest prawdziwe, a~mówi ono, że \ref{scep-klamca} jest nieznane. Zatem \ref{scep-klamca} jest nieznane i~udowodniliśmy, że nasze pierwotne założenie jest fałszywe. Przyjmijmy więc, że \ref{scep-klamca} jest nieznane. Następnie -- zakładając, że o~udowodnionym zdaniu wiemy, że jest prawdziwe -- musimy uznać, że wiemy, że \ref{scep-klamca} jest nieznane, a~zatem \ref{scep-klamca} jest znane. W~ten sposób wracamy do naszego pierwotnego założenia i~domykamy pętlę błędnego koła. \ref{scep-klamca} jest znane wtedy i~tylko wtedy, gdy jest nieznane.
 
-Aby pokazać autoreferencyjność tego zdania załóżmy najpierw, że \ref{scep-klamca} jest znane. Następnie -- zakładając, że obowiązuje aksjomat (T) -- musimy uznać, że \ref{scep-klamca} jest prawdziwe, a~mówi ono, że \ref{scep-klamca} jest nieznane. Zatem \ref{scep-klamca} jest nieznane i~udowodniliśmy, że nasze pierwotne założenie jest fałszywe. Przyjmijmy więc, że \ref{scep-klamca} jest nieznane. Następnie -- zakładając, że o~udowodnionym zdaniu wiemy, że jest prawdziwe -- musimy uznać, że wiemy, że \ref{scep-klamca} jest nieznane, a~zatem \ref{scep-klamca} jest znane. W~ten sposób wracamy do naszego pierwotnego założenia i~domykamy pętlę błędnego koła. \ref{scep-klamca} jest znane wtedy i~tylko wtedy, gdy jest nieznane.
+Już ta krótka demonstracja podpowiada, jakie reguły musimy przyjąć, by dowieść sprzeczności wywołanej przez paradoks znawcy. Podobnie, jak z~powodu zdań wyrażających paradoks kłamcy każda semantycznie zamknięta (tj. niewprowadzająca stratyfikacji języków) teoria (będąca rozszerzeniem arytmetyki pierwszego rzędu) zawierająca T-równoważności okazywała się niespójna\footnote{Por. rozdz.~\ref{sil-boch}.}, tak możemy udowodnić analogiczne twierdzenie w~kontekście epistemicznym.
 
-Już ta krótka demonstracja pokazuje, jakie reguły musimy przyjąć, by dowieść sprzeczności wywołanej przez paradoks znawcy. Podobnie, jak przez zdania wyrażające paradoks kłamcy każda semantycznie zamknięta (tj. niewprowadzająca stratyfikacji języków) teoria (będąca rozszerzeniem arytmetyki pierwszego rzędu) zawierająca T-równoważności okazywała się niespójna\footnote{Por. rozdz.~\ref{sil-boch}.}, tak możemy udowodnić analogiczne twierdzenie w~kontekście epistemicznym.
+\begin{tw}[Montague'a\footnote{R. Montague, \textit{Syntactical treatments of modality, with corollaries on reflexion principles and finite axiomatizability}, ,,Acta Philosophical Fennica'', vol. 16 (1963), ss.~153-167. Przedruk w: red. R.H. Thomason, \textit{Formal Philosophy: Selected Papers of Richard Montague}, Yale University Press, New Haven -- London 1974, ss.~286-302.}]\label{scep-znaw-montag}
+Każda teoria (będąca rozszerzeniem arytmetyki pierwszego rzędu) zawierająca epistemiczną regułę wymuszania
+\begin{flalign}
+& \frac{A}{K A} & \tag{RW\textsubscript{K}}\label{Knecessitation-rule}
+\end{flalign}
+oraz aksjomat \eqref{ruleT}\footnote{W~rzeczywistości podobnych twierdzeń można dowodzić przy wykorzystaniu innych, także słabszych założeń. Dobry teorio-dowodowy przegląd paradoksu znawcy przedstawia: Z. Tworak, \textit{Paradoks znawcy (The Knower Paradox}), ,,Filozofia Nauki'', vol. 19 (2011), nr 3(75), ss.~29-47.}
+jest sprzeczna.
+\end{tw}
 
-Twierdzenie (Montague'a\footnote{R. Montague, \textit{Syntactical treatments of modality, with corollaries on reflexion principles and finite axiomatizability}, ,,Acta Philosophical Fennica'', vol. 16 (1963), ss.~153-167. Przedruk w: red. R.H. Thomason, \textit{Formal Philosophy: Selected Papers of Richard Montague}, Yale University Press, New Haven -- London 1974, ss.~286-302.}) Każda teoria (będąca rozszerzeniem arytmetyki pierwszego rzędu) zawierająca epistemiczną regułę wymuszania
-
-reguła oraz aksjomat
-
-(T)\footnote{W~rzeczywistości podobnych twierdzeń można dowodzić przy wykorzystaniu innych, także słabszych założeń. Dobry teorio-dowodowy przegląd paradoksu znawcy przedstawia: Z. Tworak, \textit{Paradoks znawcy (The Knower Paradox}), ,,Filozofia Nauki'', vol. 19 (2011), nr 3(75), ss.~29-47.}
-
-jest sprzeczna.\label{scep-znaw-montag}
 
 Dowód opiera się na tzw. lemacie o~diagonalizacji dopuszczającym możliwość sformułowania w~języku takiej teorii zdań w~stylu \ref{scep-klamca}\footnote{Dowód tego lematu naśladuje pewne fragmenty dowodu twierdzenia Gödla. Jego przedstawienie nie jest konieczne dla zrozumienia toku wywodu i~raczej zaciemniłoby przedstawiany tu obraz. Choć podobieństwo samozwrotności oraz twierdzeń Gödla jest samo w~sobie ciekawym zagadnieniem.} i~właściwie w~sposób formalny odtwarza wykazanie niespójności paradoksu znawcy\footnote{Por. J. Stern, \textit{Montague's Theorem and Modal Logic}, ,,Erkenntnis'', vol. 79 (2014), nr 3, s.~554.}.
-
-$\lambda \equiv \neg K~\lambda$ lemat o~diagonalizacji, paradoks znawcy
-
-$K(\lambda) \to \lambda$ (T)
-
-$\neg K (\lambda)\equiv$ elem., MP 1,2
-
-$\lambda\equiv$ elem., MP 1,3
-
-$K(\lambda)$RW
-
-Sprz. 3, 5
+\begin{proof}
+\begin{flalign}
+& \lambda \equiv \neg K \lambda 			& \text{(lemat o~diagonalizacji, paradoks znawcy)}\label{znafca1} \\
+& K\lambda \to \lambda		& \text{(\ref{ruleT})}\label{znafca2} \\
+& K \lambda \to \neg K \lambda				& \text{($\equiv$ elim., syl. hip., \ref{znafca1},\ref{znafca2})}\label{znafca3a} \\
+& \neg K \lambda				& \text{(p. Claviusa, \ref{znafca3a})}\label{znafca3} \\
+& \lambda			& \text{($\equiv$ elim., MP \ref{znafca1}, \ref{znafca3})}\label{znafca4} \\
+& K \lambda								& \text{(\ref{Knecessitation-rule} \ref{znafca4})}\label{znafca5}\\
+& \qquad \text{contr. \ref{znafca3}, \ref{znafca5}} 									& \nonumber\qedhere
+\end{flalign}
+%$\lambda \equiv \neg K~\lambda$ lemat o~diagonalizacji, paradoks znawcy
+%
+%$K\lambda \to \lambda$ (T)
+%
+%$\neg K (\lambda)\equiv$ elem., MP 1,2
+%
+%$\lambda\equiv$ elem., MP 1,3
+%
+%$K(\lambda)$RW
+%
+%Sprz. 3, 5
+\end{proof}
 
 Paradoks znawcy może posłużyć do podparcia wielu argumentów wytaczanych w~dyskusjach z~zakresu podstaw i~filozofii matematyki, epistemologii teorii dowodu czy filozofii umysłu\footnote{Zob. R. Sorensen, \textit{Epistemic Paradoxes}, [w:] \textit{The Stanford Encyclopedia of Philosophy}, wyd. wiosna 2022, red. E.N. Zalta, <\url{https://plato.stanford.edu/archives/spr2022/entries/epistemic-paradoxes/}>.}. Dla nas jednak jego najciekawszym zastosowaniem jest wykorzystanie go jako ilustracji teologicznego sceptycyzmu. Okazuje się, że samozwrotny, paradoksalny charakter teorii Niepojmowalnego można zredukować do prostego zdania w~tylu znawcy (\ref{scep-klamca}). W~końcu, gdy mówimy, że żadne prawdziwe zdania o~Bogu nie jest poznawalne, to zdanie wyrażające tę zasadę pośrednio mówi o~sobie, że samo nie powinno być znane.
 
-Powyższa obserwacja wraz z~twierdzeniem \ref{scep-znaw-montag} zdają się sugerować, że do rozwikłania paradoksu Niepoznawalnego można próbować wykorzystać rozwiązania w~stylu Bocheńskiego przedstawione w~poprzedniej części pracy. Należy jednak pamiętać, że oprócz dodatkowych trudności wynikających z~faktu, że w~sytuacji epistemicznej próbujemy eksploatować rozwiązanie semantyczne, wszystkie obiekcje dyskutowane poprzednio\footnote{Zob. rozdz.~\ref{sil-boch-dyskusja}.} byłby zasadne także dla takiego zastosowania.
+Powyższa obserwacja wraz z~twierdzeniem \ref{scep-znaw-montag} zdają się sugerować, że do rozwikłania paradoksu Niepoznawalnego można próbować wykorzystać rozwiązania w~stylu Bocheńskiego przedstawione w~poprzedniej części pracy\footnote{Zob. rozdz.~\ref{sil-boch-nonsens}.}. Należy jednak pamiętać, że oprócz dodatkowych trudności wynikających z~faktu, że w~sytuacji epistemicznej próbujemy eksploatować rozwiązanie semantyczne, wszystkie obiekcje dyskutowane poprzednio\footnote{Zob. rozdz.~\ref{sil-boch-dyskusja}.} będą zasadne także dla takiego zastosowania.
 
