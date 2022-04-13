@@ -1,9 +1,9 @@
 
-%\chapter{Teologia apofatyczna jako teologia milczenia}
+\chapter{Teologia apofatyczna jako teologia milczenia}
 %\section{Wprowadzenie}
 
 
-\chapter{Wprowadzenie}
+%\chapter{Wprowadzenie}
 
 
 Jedna z~najczęściej spotykanych interpretacji teologii negatywnej zwraca szczególną uwagę na boską transcendencję. Interpretacja ta ma swoje źródła w~tym, że dla wielu teologów negatywnych zaprzeczenia, w~takim samym stopniu jak potwierdzenia, nie mogą stanowić odpowiednich środków do opisu Boga. Transcendentny Bóg jest do tego stopnia ,,ponad'' niedoskonałymi pojęciami ludzkiego języka, że w~zasadzie żadnego z~nich nie powinniśmy mu przypisywać. Zatem -- według takiej interpretacji -- teologia negatywna głosi przede wszystkim, że Bóg jest zasadniczo niepojmowalny i~niewyrażalny. To podejście ma daleko idące konsekwencje, ponieważ -- skoro nie możemy przypisać Bogu żadnej własności -- powinniśmy zaprzestać mówienia o~nim i~zamilczeć.
@@ -498,20 +498,32 @@ gdzie $Q$~jest symbolem predykatowym a~$g$ stałą indywiduową oznaczającą Bo
 & \neg B(g) \land B(g) & \qquad (\text{\ref{untprim2}, p. De Morgana, }\neg\neg\text{ elim.})\label{untprim3}  \\
 & B(g) & (\ref{untprim3},\ \land\text{ elim.})\label{untprim4}  \\
 & \neg B(g) & ( -||- )\label{untprim5}  \\
-& \qquad \textit{contr.} & \nonumber
+& \qquad \text{contr. \ref{untprim4}, \ref{untprim5}} & \nonumber
 \end{flalign}
 
 Zinterpretowanie terminu ,,Bóg'' w~kategoriach deskrypcji określonej prowadziłoby do przeformułowania \ref{sil-kug-unt} w~następujący sposób:
 (UNT'')
+%\begin{flalign*}
+%		& G(x) \to \forall_Q\ \neg (Q(x) \lor \neg Q(x)). &\tag{UNT''}\label{sil-kug-untbis}
+%\end{flalign*}
 \begin{flalign*}
-		& G(x) \to \forall_Q\ \neg (Q(x) \lor \neg Q(x)). &\tag{UNT''}\label{sil-kug-untbis}
+		& G(x) \equiv \forall_Q\ \neg (Q(x) \lor \neg Q(x)). &\tag{UNT''}\label{sil-kug-untbis}
 \end{flalign*}
-Jednakże w~takim wypadku oddanie naturalno-językowego terminu ,,Bóg'' przy pomocy predykatu prowadzi do dodatkowych niepożądanych konsekwencji. Jedną z~nich jest zdanie, że jeśli coś jest Bogiem, to Bogiem nie jest:
+Jednakże w~takim wypadku oddanie naturalno-językowego terminu ,,Bóg'' przy pomocy predykatu prowadzi do dodatkowych niepożądanych konsekwencji. Jedną z~nich jest zdanie, że coś jest Bogiem wtedy i tylko wtedy, gdy nim nie jest:
+%\begin{flalign}
+%& G(x) to \forall_Q\ \neg (Q(x) \lor \neg Q(x)) & \eqref{sil-kug-untbis}\label{untprim6} \\
+%& G(x) \to \neg (G(x) \lor \neg G(x)) & (\ref{untprim6},\ \forall \text{ elim., syl. hip.})\label{untprim7} \\
+%& G(x) \to \neg G(x) \land G(x) & (\text{\ref{untprim7}, p. De Morgana, }\neg\neg\text{ elim., syl. hip.})\label{untprim8} \\
+%& G(x) \to \neg G(x) & (\ref{untprim8},\ \land\text{ elim.}\label{untprim9})
+%\end{flalign}
 \begin{flalign}
-& G(x) \to \forall_Q\ \neg (Q(x) \lor \neg Q(x)) & \eqref{sil-kug-untbis}\label{untprim6} \\
-& G(x) \to \neg (G(x) \lor \neg G(x)) & (\ref{untprim6},\ \forall \text{ elim., syl. hip.})\label{untprim7} \\
-& G(x) \to \neg G(x) \land G(x) & (\text{\ref{untprim7}, p. De Morgana, }\neg\neg\text{ elim., syl. hip.})\label{untprim8} \\
-& G(x) \to \neg G(x) & (\ref{untprim8},\ \land\text{ elim.}\label{untprim9})
+& G(x) \equiv \forall_Q\ \neg (Q(x) \lor \neg Q(x)) & \eqref{sil-kug-untbis}\label{untprim6} \\
+& G(x) \equiv \neg (G(x) \lor \neg G(x)) & (\ref{untprim6},\ \forall \text{ elim., syl. hip.})\label{untprim7} \\
+& G(x) \equiv \neg G(x) \land G(x) & (\text{\ref{untprim7}, p. De Morgana, }\neg\neg\text{ elim., syl. hip.})\label{untprim8} \\
+& G(x) \equiv \neg G(x) & (\ref{untprim8},\ \land\text{ elim.})\label{untprim9}\\
+& G(x)  & (\equiv \text{ elim., p. Claviusa }\ref{untprim9})\label{untprim10}\\
+& \neg G(x) & ( -||- )\label{untprim11}\\
+& \qquad \text{contr. \ref{untprim10}, \ref{untprim11}} & \nonumber
 \end{flalign}
 
 Z~powodu powyższych problemów w~tejże sekcji będę traktował termin ,,Bóg'' jako nazwę własną. Za takim ujęciem stoją jeszcze dwa argumenty. Po pierwsze, ułatwi to porównanie zasad Küglera z~tymi formalnymi ujęciami teorii Niewysłowionego, w~których użycie predykatu w~celu oddania słowa ,,Bóg'' jest niemożliwe, nieintuicyjne lub prowadzi wprost do sprzeczności. Po drugie, skoro kwestia (nie)istnienia Boga nie jest centralnym zagadnieniem teologii apofatycznej -- przeciwnie, myśliciele apofatyczni raczej uznawali Jego istnienie za pewnik -- przyjęcie tej kategorii językowej nie będzie kwestią kontrowersyjną\footnote{Por rozdz.~\ref{sil-kt-jez}.}. Odpowiadające takiemu ujęciu sformułowanie \ref{sil-kug-ent} przybierze następującą postać:
@@ -545,7 +557,6 @@ Na pierwszy rzut oka wydawałoby się, że najlepszą kandydatką do oddania for
 
 Powiedzieliśmy jednak, że rachunek logiczny, który by miał leżeć u~podstaw \ref{sil-kug-ent} powinien także blokować równoważność \ref{sil-kug-untprim} i~\ref{sil-kug-entprim}. Problem w~tym, że logika intuicjonistyczna nie spełnia tego kryterium. W~rzeczywistości odrzuca ona ,,jedną czwartą'' praw De Morgana, to znaczy jedną implikację jednego z~tych praw, mianowicie:
 %Not in Int (chyba nie to, co w~artykule).
-
 \begin{flalign*}
 &\nvdash_{\text{INT}} \neg \forall x A \to \exists x \neg A.&
 \end{flalign*}
