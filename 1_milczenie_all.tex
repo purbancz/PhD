@@ -244,21 +244,30 @@ Niemożliwe byłoby zapewne oddawanie czci, tzn. przypisywanie wartości czemuś
 
 Oczywiście, bez odpowiedniej, zaawansowanej filozoficznie interpretacji i~formalnej rekonstrukcji powyższy paradoks nie będzie prowadził do pary zdań sprzecznych. Można zatem uznać, że jest to paradoks w~ogólnym, szerszym sensie tego słowa. Niektórzy badacze\footnote{Np. P. Rojek, \textit{Logika teologii negatywnej}, dz. cyt., s.~225.} mówią w~jego kontekście o~niezgodności teologii apofatycznej z~praktyką religijną. Z~tego powodu paradoks ten można także nazwać paradoksem performatywnym lub prakseologicznym.
 
-W~poniższych rozdziałach przedstawię rozmaite próby obrony teologii milczenia i~zachowania jej spójności. W~większości przypadków analizowani przeze mnie autorzy mierzą się z~wynikającym z~samoodniesionia ,,wewnętrznym'' paradoksem tej teorii. W~niektórych pracach pojawiają się jednak odwołania także do paradoksów ,,zewnętrznych''. W~pewnych przypadkach w~celu obrony apofatyzmu i~przed tym rodzajem paradoksu\footnote{Zob. rozdz.~\ref{sil-jac}.}. W~innych po to, by argumentować przeciw teologii milczenia, mimo zachowania jej spójności w~zakresie paradoksu Niewyrażalnego\footnote{Zob. rozdz.~\ref{sil-boch}.}.
+W~poniższych rozdziałach przedstawię rozmaite próby obrony teologii milczenia i~zachowania jej spójności. W~większości przypadków analizowani przeze mnie autorzy mierzą się z~wynikającym z~samoodniesionia ,,wewnętrznym'' paradoksem tej teorii. W~niektórych pracach pojawiają się jednak odwołania także do paradoksów ,,zewnętrznych'': w~pewnych przypadkach w~celu obrony apofatyzmu i~przed tym rodzajem paradoksu\footnote{Zob. rozdz.~\ref{sil-jac}.}, w~innych po to, by argumentować przeciw teologii milczenia, mimo zachowania jej spójności w~zakresie paradoksu Niewyrażalnego\footnote{Zob. rozdz.~\ref{sil-boch}.}.
 
 
 \section{Uwaga o~kategorii językowej terminu ,,Bóg''}\label{sil-kt-jez}
 
 Do poniższych rozdziałów należy dodać jeszcze jedną uwagę. Używany w~języku naturalnym termin ,,Bóg'' jest dwuznaczny w~sensie jego kategorii językowej. W~analitycznej filozofii Boga nie został jeszcze rozstrzygnięty spór, czy należy rozumieć go jako nazwę własną czy może stanowi on deskrypcję określoną. Jeśli ktoś jest skłonny uważać, że termin ,,Bóg'' jest nazwą, w~języku formalnym będzie przedstawiał go za pomocą stałej indywiduowej (na przykład $g$ -- tak jak zostało to zrobione w~powyższym przykładzie). W~przeciwnym wypadku termin ten zostanie wyrażony przy pomocy predykatu $G(x)$ rozumianego jako ,,$x$ jest Bogiem'' (lub -- w~zależności od religijnego kontekstu dyskursu -- ,,$x$ jest bóstwem'', ,,$x$ jest boskie'', ,,$x$ jest absolutem'', ,,$x$ jest ostateczną rzeczywistością'' itp.). W~ostateczności $G(x)$ możemy zdefiniować poprzez iloczyn wszystkich predykatów przypisywanych Bogu przez dane wyznanie wiary (tu oznaczony jako $\phi(x)$):
-
-$$G(x) \equiv_{\text{def}} \exists x (\phi(x) \land \forall y (\phi(y) \to x = y))\footnote{Por. J.M. Bocheński, \textit{Logika religii}, dz. cyt., §21.1. Oczywiście, taki iloczyn mógłby zostać zastąpiony kwantyfikacją po predykatach w~logice drugiego rzędu.}.$$
+%$$G(x) \equiv_{\text{def}} \exists x (\phi(x) \land \forall y (\phi(y) \to x = y))\footnote{Por. J.M. Bocheński, \textit{Logika religii}, dz. cyt., §21.1. Oczywiście, taki iloczyn mógłby zostać zastąpiony kwantyfikacją po predykatach w~logice drugiego rzędu.}.$$
+\begin{flalign*}
+&G(x) \equiv_{\text{def}} \exists x (\phi(x) \land \forall y (\phi(y) \to x = y))\footnotemark. &
+\end{flalign*}\footnotetext{Por. J.M. Bocheński, \textit{Logika religii}, dz. cyt., §21.1. Oczywiście, taki iloczyn mógłby zostać zastąpiony kwantyfikacją po predykatach w~logice drugiego rzędu.}
 
 Oba te rozumienia terminu ,,Bóg'' muszą, siłą rzeczy, prowadzić do nieco odmiennych zapisów zdań dyskursu religijnego. Przykładowo, przypisywanie Bogu jakiejś własności będzie różnić się w~obu tych rozstrzygnięciach. Załóżmy, że chcemy stwierdzić, że Bóg jest wszechmocny, a~predykat W(x) oznacza ,,$x$ jest wszechmocny''. Jeśli uznajemy, że termin ,,Bóg'' należy do kategorii nazw, zdanie to zapiszemy po prostu jako
-$$W(g).$$
+%$$W(g).$$
+\begin{flalign*}
+		& W(g). &
+\end{flalign*}
 Jeśli natomiast przypiszemy termin ,,Bóg'' do kategorii deskrypcji określonych, zdanie to przyjmie postać
-$$
-\forall x (G(x) \to W(x)) \text{ lub}$$
-$$\neg \exists x (G(x) \land \neg W(x).$$
+%$$
+%\forall x (G(x) \to W(x)) \text{ lub}$$
+%$$\neg \exists x (G(x) \land \neg W(x).$$
+\begin{flalign*}
+		& \forall x (G(x) \to W(x)) \text{ lub} & \\
+		& \neg \exists x (G(x) \land \neg W(x). &
+\end{flalign*}
 
 
 Z~pozoru wskazana dwuznaczność może wydawać się trywialnym sporem o~notację i~logicznym ,,dzieleniem włosa na czworo''. W~rzeczywistości jednak rzadko zdarza się, by ustalania o~charakterze formalnym miały tak daleko idące konsekwencje filozoficzne, jak ma to miejsce w~przypadku rozstrzygnięcia niniejszej kwestii. Przyjęcie, że jakiś termin należy do kategorii nazw własnych w~konsekwencji pociąga za sobą przyjęcie istnienia denotowanego przez nazwę obiektu. W~tym wypadku wiązałoby się to z~założeniem istnienia Boga. Drugie z~przedstawionych rozwiązań pozbawione jest już tak silnych zobowiązań o~charakterze ontologicznym\footnote{Co nie oznacza, że pozbawione jest jakichkolwiek wymogów. Jednym z~warunków, jaki powinno ono spełniać, jest warunek niesprzeczności.}. I~choć kwestia ta jest drugorzędna z~punktu widzenia przedmiotu niniejszej pracy -- w~teologii apofatycznej istnienie Boga nie jest podważane, zasadniczo należy zwracać na nią szczególną uwagę przy formalizowaniu dyskursu teologicznego, zwłaszcza w~rozważaniach dotyczących tzw. dowodów za istnieniem Boga. Tak czy owak, jak zauważa Adam Olszewski, kwesta kategorii językowej terminu ,,Bóg'' ,,nie została [\ldots] ostatecznie rozstrzygnięta, a~nawet wyczerpująco rozważona. Zresztą podejście do kwestii nazw i~deskrypcji posiada wiele różnych wersji i~każda z~nich ma swoje \textit{pro} i~\textit{contra}''\footnote{A. Olszewski, \textit{Pewna krytyka teologii naturalnej}, ,,Analecta Cracoviensia'', vol. 46 (2014), s.~214.}.
@@ -575,7 +584,7 @@ Skoro w~dyskusji pojawił się już wątek logik parakosystentnych, warto wspomn
 Warto także zwrócić uwagę na sposób, w~jaki Kügler próbuje poradzić sobie ze sprzecznością. Strategia ,,samowykluczenia'', którą proponuje, nakazuje wyłączyć z~zasięgu oddziaływania \ref{sil-kug-ent} własność, którą sama ta zasada wyraża. Kügler usiłuje uzasadnić zastosowanie takiej strategii uzusem takich naturalno-językowych wyrażeń, jak np. ,,nie ufaj nikomu'' (w domyśle, używający takiego zwrotu miałby chcieć przekazać: ,,nie ufaj nikomu prócz mnie mówiącemu Ci teraz, byś nie ufał nikomu'') lub pojawianiem się podobnych strategii w~pewnych interpretacjami klasycznego paradoksu kłamcy. Nietrudno jednak uznać samowykluczenie za zwykłe rozwiązanie \textit{ad hoc}, które -- zamiast rozwiązywać -- ucieka od paradoksu samoodniesienia generowanego przez szczegółową zasadę teologii negatywnej i~jako takie, nie może zostać uznane za satysfakcjonującą strategię radzenia sobie ze sprzecznościami teologii milczenia.
 
 
-\chapter{Semantyczna zasada teologii negatywnej}
+\chapter{Semantyczna zasada teologii negatywnej}\label{sil-gell}
 
 Obiekcje podobne do tych podniesionych w~poprzednim rozdziaje mogą równie dobrze dotyczyć interpretacji teologii negatywnej, którą przedstawił Jerome I. Gellman\footnote{Zob. J.I. Gellman, \textit{The Meta-Philosophy of Religious Language}, ,,Nous'', vol. 11 (1971), ss.~151-161.}. W~jego rozważaniach teologia apofatyczna jest teorią, w~ramach której jakikolwiek predykat $P$~języka ,,skończonych bytów'' nie może być prawdziwie orzekany o~Bogu. Główną tezą tej teorii jest, że Bóg nie należy do przedmiotowego zakresu odniesienia żadnego z~predykatów naszego języka. Jeśli teolog apofatyczny neguje posiadanie przez Boga jakiejś własności, ma on na myśli raczej negacją \textit{wykluczającą} niż negację \textit{wyboru}. Jego zamiarem jest wyłącznie stwierdzenie, że to nieprawda, że predykat $P$~przysługuje Bogu, niekoniecznie sugerując, że można o~nim orzec dopełnienie tego predykatu, czyli nie-$P$. Rozważania te doprowadziły Gellmana do sformułowania pewnego wariantu zasady teologii negatywnej, który przynajmniej na poziomie syntaktycznym tożsamy jest z~\ref{sil-kug-unt} przedstawioną w~poprzednim paragrafie. Mimo podobnych zarzutów wysuwanych w~stronę obu autorów, punkt wyjścia teorii Gellmana jest zgoła odmienny od tego, który przyświecał Küglerowi.
 
@@ -863,10 +872,10 @@ O~ile posługiwanie się logiką w~celu modelowania i~formalnych badań rozmaity
 
 \end{tikzpicture}
 
-\caption[Typologia znaczeń według Bocheńskiego]{Typologia znaczeń według Bocheńskiego\footnote{Por. tamże, s.~348.}.}\label{sil-boch-typ}
+\caption[Typologia znaczeń według Bocheńskiego]{Typologia znaczeń według Bocheńskiego\footnotemark.}\label{sil-boch-typ}
 \end{center}
 \end{figure}
-
+\footnotetext{Por. tamże, s.~348.}
 
 
 Powyższa typologia pozwala Bocheńskiemu podzielić i~uporządkować teorie religii na:
@@ -882,7 +891,7 @@ Powyższa typologia pozwala Bocheńskiemu podzielić i~uporządkować teorie rel
 Warto dodać, że powyższa lista w~pewnym sensie stanowi częściowy porządek. Z~perspektywy teorii $n$, cokolwiek twierdzi się w~ramach teorii $<n$ może być uznane za prawdziwe w~stosunku do pewnych fragmentów dyskursu religijnego. Teoria $n$~głosi ponadto, że istnieją jakieś partie dyskursu religijnego cechujące się odmiennym rodzajem znaczenia. Na przykład, z~punktu widzenia teorii twierdzeniowej można uznać, że pewne fragmenty dyskursu religijnego zawierają wyłącznie reguły, inne są niekomunikowalne, w~jeszcze innych liczą się wyłącznie uczucia i~nie ma tam żadnego znaczenia ponad to subiektywne i~związane z~emocjami. Co więcej, z~perspektywy teorii znaczeniowej można również przyznać, że pewne fragmenty dyskursu religijnego w~ogóle nie niosą żadnego znaczenia. Zatem teorie te są uporządkowane względem wzrastającej mocy. Co ciekawe, w~dociekaniach Bocheńskiego teoria Niewysłowionego leży u~podstaw tej hierarchii, natomiast teologia negatywna należy do teorii znajdujących się u~jej szczytu -- Bocheński umieszcza ją wśród teorii znaczeń niepełnych.
 
 
-\section{Tajemnica częściowego znaczenia}
+\section{Tajemnica częściowego znaczenia}\label{sil-boch-tajem}
 
 W~rozważaniach Bocheńskiego teologia negatywna jest zatem alternatywnym dla teologii milczenia sposobem przedstawiania i~badania dyskursu religijnego. Terminem, który często pojawia się w~kontekście obu tych doktryn jest ,,tajemnica''. Bocheński twierdzi, że choć to o~przedmiocie religijnym twierdzi się, że jest tajemniczy -- i~to w~tajemniczy w~sposób szczególny, ,,wyższy'' -- własności ,,tajemniczości'' nie przysługuje przedmiotom, lecz zdaniom. Z~tego powodu mówi się na przykład o~,,tajemnicach wiary''\footnote{Według Bocheńskiego mówienie o~tajemnicach wiary to wypowiedzi metajęzykowe. Por. tamże, s.~413.}. Bocheński pojęcie tajemnicy opiera na pojęciu rozumienia.
 
@@ -923,7 +932,7 @@ Przyjmując to założenie Bocheński próbuje formalnie zrekonstruować znaczen
 %\phi \in \alpha
 %\to \neg \phi (g),\label{sil-boch-NNT}
 %\end{align}
-gdzie g~oznacza przedmiot religii, czyli Boga. W~takim wypadku dyskurs religijny może zawierać wyłącznie twierdzenia, które orzekają o~Bogu negację własności pozytywnych wyrażonych w~terminach świeckich. Deskrypcja określona skojarzona z~predykatem ,,jest Bogiem'' przedstawiać się będzie następująco:\footnotetext{Zarówno w~oryginalnej pracy, jak i~w jej polskim tłumaczeniu kwantyfikator ten wiąże zmienną(?) oznaczoną symbolem F, która nie ma żadnych wystąpień w~niniejszej formule. Za dobrą monetę przyjmuję, że jest to oczywista pomyłka drukarska. Wskazuje na to także poprawny, jak się wydaje, zapis zawarty w~\ref{sil-boch-NNTbis} poniżej.}
+gdzie $g$~oznacza przedmiot religii, czyli Boga. W~takim wypadku dyskurs religijny może zawierać wyłącznie twierdzenia, które orzekają o~Bogu negację własności pozytywnych wyrażonych w~terminach świeckich. Deskrypcja określona skojarzona z~predykatem ,,jest Bogiem'' przedstawiać się będzie następująco:\footnotetext{Zarówno w~oryginalnej pracy, jak i~w jej polskim tłumaczeniu kwantyfikator ten wiąże zmienną(?) oznaczoną symbolem $F$, która nie ma żadnych wystąpień w~niniejszej formule. Za dobrą monetę przyjmuję, że jest to oczywista pomyłka drukarska. Wskazuje na to także poprawny, jak się wydaje, zapis zawarty w~\ref{sil-boch-NNTbis} poniżej.}
 \begin{flalign*}
 		\begin{split}
 		 G(x) \equiv_{\text{def}}\ &\exists x \big((
