@@ -1,4 +1,6 @@
 
+%\part{Aspekt epistemiczny}
+
 \chapter{Teologia apofatyczna jako teologiczny sceptycyzm}\label{scep}
 %\section{Wprowadzenie}
 
@@ -198,7 +200,7 @@ Po pierwsze, zauważmy, że \ref{scep-par-postKNT} ma postać (odpowiednio zinte
 
 Po drugie, \ref{scep-par-postKNT} i~\ref{scep-par-KNT-bis} wiążą się z~paradoksem poznawalności Churcha-Fitcha. Z~grubsza rzecz biorąc, paradoks ten mówi, że jeśli wiemy, że p~jest niepoznawalną prawdą, to niepoznawalne jest, że p~jest niepoznawalną prawdą (lub, przez kontrapozycję, że skoro wszystkie prawdy są co do zasady poznawalne, to wszystkie prawdy są znane). Podczas analizy tego paradoksu okaże się, że dosyć skromne założenia dotyczące działania epistemicznego operatora $K$~każą uznać \ref{scep-par-KNT-bis} za zdanie fałszywe.
 
-Po trzecie, samozwrotną naturę powyższych wyrażeń możemy zredukować do tzw. paradoksu znawcy i~związanego z~nim twierdzenia Montague'a, które uważane jest za generalizację twierdzenia Tarskiego (mówiącego, że każda teoria sformułowana w~semantycznie zamkniętym języku i~zwierająca T-równoważności jest sprzeczna). Zatem, mimo badań biorących za punkt wyjścia odrębne interpretacje teologii negatywnej oraz mimo stosowania odmiennych logicznych narzędzi do przedstawiania formalnej struktury tych interpretacji, w~ostateczności można uznać, że logiczne problemy teologii negatywnej mają tożsamą a~przynamniej podobną strukturę, zarówno, gdy rozpatrywane są w~jej aspekcie semantycznym, jak i~epistemicznym.
+Po trzecie, samozwrotną naturę powyższych wyrażeń możemy zredukować do tzw. paradoksu wiedzy (zwanego także -- przez analogię do paradoksu kłamcy -- paradoksem znawcy) i~związanego z~nim twierdzenia Montague'a, które uważane jest za generalizację twierdzenia Tarskiego (mówiącego, że każda teoria sformułowana w~semantycznie zamkniętym języku i~zwierająca T-równoważności jest sprzeczna). Zatem, mimo badań biorących za punkt wyjścia odrębne interpretacje teologii negatywnej oraz mimo stosowania odmiennych logicznych narzędzi do przedstawiania formalnej struktury tych interpretacji, w~ostateczności można uznać, że logiczne problemy teologii negatywnej mają tożsamą a~przynamniej podobną strukturę, zarówno, gdy rozpatrywane są w~jej aspekcie semantycznym, jak i~epistemicznym.
 
 \section{Problem Moore'a}\label{scep-par-problemmoorea}
 
@@ -324,7 +326,7 @@ $\neg K(A \land \neg K~A)$
 & \neg K (A \land \neg K A) & \text{(\ref{lematK1}, \ref{lematK3}, \ref{lematK5}, reductio ad absurdum)}\qedhere
 \end{flalign}
 \end{proof}
-Zatem, jak pokazuje powyższy lemat, nie możemy mieć wiedzy o~zdaniach w~stylu Moore'a. Stawiając tę sprawę w~kontekście teorii Niepoznawalnego: nawet jeśli istnieją jakieś nieznane nam prawdy (o Bogu), nie moglibyśmy o~tym wiedzieć. Staje się to jasne, gdy prześledzimy dalsze fragmenty dowodu twierdzenia \ref{scep-par-cf-parpozn}. Najpierw jednak przedstawmy je w~bardziej formalnym zapisie\footnote{Przy takiej notacji twierdzeniu \ref{scep-par-cf-fitch} odpowiada wyrażenie $p \land \neg K p \vdash p \land \neg \Diamond K p$. W~badaniach wokół paradoksu poznawalności najczęściej stosuje się kwantyfikację po zmiennych zdaniowych. W~takim zapisie twierdzenia \ref{scep-par-cf-fitch} oraz \ref{scep-par-cf-parpozn} przyjmują następującą postać: $\exists p (p \land \neg K p) \vdash \exists p (p \land \neg \Diamond K p)$ oraz $\forall p (p \to \Diamond K p) \vdash \forall p (p \to K p)$. Nie jest to standardowa notacja, więc korzystam z~tego, że w~obrębie przedstawianych tu rozważań można pominąć kwantyfikatory bez utraty sensu twierdzenia oraz poprawności jego dowodu.}:
+Zatem, jak pokazuje powyższy lemat, nie możemy mieć wiedzy o~zdaniach w~stylu Moore'a. Stawiając tę sprawę w~kontekście teorii Niepoznawalnego: nawet jeśli istnieją jakieś nieznane nam prawdy (o Bogu), nie moglibyśmy o~tym wiedzieć. Staje się to jasne, gdy prześledzimy dalsze fragmenty dowodu twierdzenia \ref{scep-par-cf-parpozn}. Najpierw jednak przedstawmy je w~bardziej formalnym zapisie\footnote{Przy takiej notacji twierdzeniu \ref{scep-par-cf-fitch} odpowiada wyrażenie $p \land \neg K p \vdash p \land \neg \Diamond K p$. W~badaniach wokół paradoksu poznawalności najczęściej stosuje się kwantyfikację po zmiennych zdaniowych. W~takim zapisie twierdzenia \ref{scep-par-cf-fitch} oraz \ref{scep-par-cf-parpozn} przyjmują następującą postać: $\exists p (p \land \neg K p) \vdash \exists p (p \land \neg \Diamond K p)$ oraz $\forall p (p \to \Diamond K p) \vdash \forall p (p \to K p)$. Notacja ta wprowadza na raz kwantyfikację, operatory atletyczne oraz epistemiczne, więc -- by nie powodować dodatkowego zamieszania -- korzystam z~tego, że w~obrębie przedstawianych tu rozważań można pominąć kwantyfikatory bez utraty sensu twierdzenia oraz poprawności jego dowodu.}:
 %Twierdzenie $A~\to \Diamond K~A \vdash A~\to K~A$.\label{scep-par-cf-unkno}
 \begin{tw}\label{scep-par-cf-unkno}
 $A \to \Diamond K A \vdash A \to K A$
@@ -339,7 +341,7 @@ W~powyższej formule pojawia się dodatkowy symbol -- $\Diamond$. Stosowany jest
 \quad& \square \neg A~\to \neg \Diamond A. & \tag{$\square$ elim.}\label{nec-elim-rule}
 \end{flalign}
 
-Pierwsza z~wymienionych zasad każe uznać, że twierdzeniem jest wyrażenie $\square A$, o~ile $A$~jest już wcześniej udowodnionym twierdzeniem. Druga zasada mówi, że koniecznie fałszywe sądy są niemożliwe i~wynika wprost z~dualności operatorów $\Diamond$ i~$\square$. Mając te dwie zasady oraz lemat \ref{scep-par-cf-lemat} możemy podać dowód twierdzenia \ref{scep-par-cf-unkno}\footnote{Por. H. Wansing, \textit{Diamonds Are a~Philosopher's Best Friends: The Knowability Paradox and Modal Epistemic Relevance Logic}, ,,Journal of Philosophical Logic'', vol. 31 (2002), p. 593; W.H. Holliday, \textit{Epistemic Logic and Epistemology}, [w:] \textit{Introduction to Formal Philosophy}, red. S.O. Hansson, V.F. Hendricks, Springer, Cham 2018, p. 364.}.
+Pierwsza z~wymienionych zasad każe uznać, że twierdzeniem jest wyrażenie $\square A$, o~ile $A$~jest już wcześniej udowodnionym twierdzeniem. Druga zasada mówi, że koniecznie fałszywe sądy są niemożliwe i~wynika wprost z~dualności operatorów $\Diamond$ i~$\square$. Mając te dwie zasady oraz lemat \ref{scep-par-cf-lemat} możemy podać dowód twierdzenia \ref{scep-par-cf-unkno}\footnote{Por. H. Wansing, \textit{Diamonds Are a~Philosopher's Best Friends: The Knowability Paradox and Modal Epistemic Relevance Logic}, ,,Journal of Philosophical Logic'', vol. 31 (2002), p. 593; W.H.~Holliday, \textit{Epistemic Logic and Epistemology}, [w:] \textit{Introduction to Formal Philosophy}, red. S.O.~Hansson, V.F. Hendricks, Springer, Cham 2018, p. 364.}.
 %Dowód. Chyba cały na schematach.
 \begin{proof}
 \begin{flalign}

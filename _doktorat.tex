@@ -118,6 +118,10 @@
 
 
 
+%\renewcommand{\part}[1]{\addcontentsline{toc}{part}{#1}}
+
+
+
 
 \begin{document}
 
@@ -128,12 +132,18 @@
 \listoffigures
 
 \cleardoublepage
-\part{Aspekt semantyczny}
+
+
+\part{Aspekt semantyczny (oraz logiczny \textit{sensu largo})}
+
+%\part{Aspekt logiczny \textit{sensu largo}}
+
 %\part{Teologia apofatyczna jako teologia milczenia}
 \include{1_milczenie_all.tex}
 \include{4_pozytywna.tex}
 
 \part{Aspekt epistemiczny}
+
 %\part{Teologia apofatyczna jako teologiczny sceptycyzm}
 \include{2_sceptycyzm_all.tex}
 
