@@ -694,15 +694,19 @@ Powyższe argumenty, jakkolwiek przemyślne, sformułowane zostały na dosyć wi
 
 Niech $M = \langle U, \Delta\rangle$ będzie interpretacją języka taką, że $U$~jest zbiorem niepustym (naszym universum), a~$\Delta$ jest funkcją określoną na zbiorze poszczególnych stałych indywiduowych. Na potrzeby naszej analizy wspomnę tylko, że w~ramach interpretacji utożsamiamy własności ze zbiorami obiektów w~naszym uniwersum, które spełniają odpowiednią relację jednoargumentową a~dla dowolnej stałej indywiduowej $a$, $\Delta (a) \in U$. Niech $\Delta(B)$ będzie zbiorem obiektów posiadających własność $B$. Oczywiście, $\Delta(B)$ jest podzbiorem $U$ ($\Delta(B)
 \subset U$, w~ekstremalnych przypadkach $\Delta(B)$ może być zbiorem pustym). Zauważmy teraz, że zbiór obiektów posiadających własność $\neg B$~identyfikuje się z~dopełnieniem zbioru $\Delta(B)$
-($\overline{\Delta(B)} = U - \Delta(B)$). Niech $SR_B$ oznacza zakres przedmiotowy predykatu $B$. Zgodnie z~definicją \ref{sil-gell-srdef}:
+%($\overline{\Delta(B)} = U - \Delta(B)$).
+($-\Delta(B) = U \setminus \Delta(B)$).
+Niech $SR_B$ oznacza zakres przedmiotowy predykatu $B$. Zgodnie z~definicją \ref{sil-gell-srdef}:
 \begin{flalign}
-&SR_B = \Delta(B) \cup \overline{\Delta(B)}.&
+%&SR_B = \Delta(B) \cup \overline{\Delta(B)}.&
+&SR_B = \Delta(B) \cup -\Delta(B).&
 \end{flalign}
 
 Posługując się tak zapisaną definicją można sformułować semantyczną zasadę teologii negatywnej (w rozumieniu Gellmana):
 %(SNT'') xxx,
 \begin{flalign*}
-		& \Delta(g) \notin SR_B = \Delta(B) \cup \overline{\Delta(B)} = U &\tag{SNT''}\label{sil-gell-sntbis}
+%		& \Delta(g) \notin SR_B = \Delta(B) \cup \overline{\Delta(B)} = U &\tag{SNT''}\label{sil-gell-sntbis}
+		& \Delta(g) \notin SR_B = \Delta(B) \cup -\Delta(B) = U &\tag{SNT''}\label{sil-gell-sntbis}
 \end{flalign*}
 gdzie przez stałą indywiduową $g$~oznaczyliśmy wyróżniony obiekt z~naszego uniwersum -- Boga. \ref{sil-gell-sntbis} stoi jednak w~sprzeczności z~samą definicją interpretacji semantycznej, zgodnie z~którą $\Delta(g) \in U$. Jeśli więc jesteśmy skłonni podtrzymywać takie rozumienie teologii negatywnej, musimy ponownie wyjść poza ramy logiki klasycznej. Niemniej jednak, w~tym przypadku nie mamy do dyspozycji wielu alternatyw, ponieważ metalogika jakiejkolwiek logiki, także logik nieklasycznych, jest zasadniczo logiką klasyczną\footnote{Por. np. B. Czernecka-Rej, \textit{On Four Types of Argumentation For Classical Logic}, ,,Roczniki Filozoficzne'', vol. 68, nr 4 (2020), ss.~284-285.}.
 
