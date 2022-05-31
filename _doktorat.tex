@@ -16,6 +16,8 @@
 
 %%%%%%%%%%%%%%%%%%%
 
+\usepackage{cmap} %polskie znaki przy kopiowaniu do innych edytorów
+
 
 %\usepackage{relsize}
 
@@ -34,13 +36,22 @@
 
 \usepackage{footmisc}
 
+%\usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={150mm,237mm},
+% left=30mm,
+% top=30mm,
+% }
+
 \usepackage{geometry}
  \geometry{
  a4paper,
- total={150mm,237mm},
- left=30mm,
- top=30mm,
+ total={160mm,247mm},
+ left=25mm,
+ top=25mm,
  }
+
 
 
 \usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
@@ -122,6 +133,36 @@
 
 
 
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{}%
+           {\leftmargin0pt
+            \@openbib@code
+            \usecounter{enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+\let\oldthebibliography\thebibliography
+\let\endoldthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]{
+  \begin{oldthebibliography}{#1}
+    \setlength{\itemsep}{.5em}
+    \setlength{\parskip}{-0.2em}
+}
+{
+  \end{oldthebibliography}
+}
+
 
 \begin{document}
 
@@ -156,12 +197,24 @@
 \include{3_neoplatonizm.tex}
 
 
+
+
+
 %\part{Aspekt pozytywny}
 %\part{,,Pozytywna'' teologia negatywna}
 %\include{4_pozytywna.tex}
 
 %\include{_draft9.tex}
 %\include{_draft_bibliografia.tex}
+
+\include{nocite.tex}
+
+%\interliniatextowa{.9}
+\bibliographystyle{upjp2}
+% ieeetr siam plain upjp2
+\bibliography{doktorat_temp2}
+
+
 
 
 \end{document}
