@@ -133,35 +133,40 @@
 
 
 
-\makeatletter
-\renewcommand\@biblabel[1]{}
-\renewenvironment{thebibliography}[1]
-     {\section*{\refname}%
-      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
-      \list{}%
-           {\leftmargin0pt
-            \@openbib@code
-            \usecounter{enumiv}}%
-      \sloppy
-      \clubpenalty4000
-      \@clubpenalty \clubpenalty
-      \widowpenalty4000%
-      \sfcode`\.\@m}
-     {\def\@noitemerr
-       {\@latex@warning{Empty `thebibliography' environment}}%
-      \endlist}
-\makeatother
 
-\let\oldthebibliography\thebibliography
-\let\endoldthebibliography\endthebibliography
-\renewenvironment{thebibliography}[1]{
-  \begin{oldthebibliography}{#1}
-    \setlength{\itemsep}{.5em}
-    \setlength{\parskip}{-0.2em}
-}
-{
-  \end{oldthebibliography}
-}
+
+%\makeatletter
+%\renewcommand\@biblabel[1]{}
+%\renewenvironment{thebibliography}[1]
+%     {\section*{\refname}%
+%      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+%      \list{}%
+%           {\leftmargin0pt
+%            \@openbib@code
+%            \usecounter{enumiv}}%
+%      \sloppy
+%      \clubpenalty4000
+%      \@clubpenalty \clubpenalty
+%      \widowpenalty4000%
+%      \sfcode`\.\@m}
+%     {\def\@noitemerr
+%       {\@latex@warning{Empty `thebibliography' environment}}%
+%      \endlist}
+%\makeatother
+%
+%\let\oldthebibliography\thebibliography
+%\let\endoldthebibliography\endthebibliography
+%\renewenvironment{thebibliography}[1]{
+%  \begin{oldthebibliography}{#1}
+%    \setlength{\itemsep}{.5em}
+%    \setlength{\parskip}{-0.2em}
+%}
+%{
+%  \end{oldthebibliography}
+%}
+
+
+
 
 
 \begin{document}
@@ -212,7 +217,7 @@
 %%\interliniatextowa{.9}
 %\bibliographystyle{upjp2}
 %% ieeetr siam plain upjp2
-%\bibliography{doktorat_temp2}
+%\bibliography{doktorat_temp3}
 
 
 
