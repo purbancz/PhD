@@ -111,6 +111,33 @@
 \renewcommand{\normalsize}{\fontsize{13}{18}\selectfont}
 
 
+\frenchspacing
+
+%\usepackage[hundred]{vrsion}
+\newcounter{run}
+\usepackage{catchfile}
+\IfFileExists{\jobname.runs}{%
+  \begingroup
+    \CatchFileEdef\tmp{\jobname.runs}{\endlinechar=-1\relax}%
+    \setcounter{run}{\tmp}%
+  \endgroup
+}{}
+\stepcounter{run}
+
+\usepackage{atveryend}
+\usepackage{newfile}
+\AtVeryEndDocument{%
+  \newoutputstream{runs}%
+  \openoutputfile{\jobname.runs}{runs}%
+  \addtostream{runs}{\number\value{run}}%
+  \closeoutputstream{runs}%
+}
+
+
+
+
+
+
 \usepackage{graphicx}
 
 
