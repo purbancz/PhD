@@ -195,17 +195,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\providecommand*\lettergroup[1]{}
+
 \usepackage{imakeidx}
 %\usepackage[xindy]{imakeidx}
 \makeindex[name=names,%
 	title={Indeks nazwisk},%
 	intoc,%
 	program=xindy,%
-	options=-C utf8 -L polish%
+%	options=-I latex -M lang/polish/utf8 -C utf8 -L polish%
 ]
 %\makeindex
 
-
+%xindy -M texindy -M page-ranges -C utf8 -L polish names.idx
 
 
 
@@ -216,6 +232,8 @@
 \hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black, breaklinks=true, linktocpage}  %to sprawia że nie widać w pdfie aktywnych linków
 \urlstyle{rm}
 %---------------------------------------------------
+
+
 
 
 
