@@ -23,12 +23,8 @@
 
 \renewcommand{\qed}{\hfill\quad\blacksquare}
 
-%---------hyperrefs-----------
-\usepackage[hyphens,spaces,obeyspaces]{url}
-\usepackage{hyperref} %to nowsza wersja pakietu url, lepsza m.in. robie linki hyperref
-\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black, breaklinks=true, linktocpage}  %to sprawia że nie widać w pdfie aktywnych linków
-\urlstyle{rm}
-%---------------------------------------------------
+
+
 
 
 \usepackage{array}
@@ -113,6 +109,8 @@
 
 \frenchspacing
 
+
+
 %\usepackage[hundred]{vrsion}
 \newcounter{run}
 \usepackage{catchfile}
@@ -137,8 +135,11 @@
 
 
 
-
 \usepackage{graphicx}
+
+
+
+
 
 
 \title{Wybrane logiczne aspekty\\teologii apofatycznej}
@@ -181,18 +182,40 @@
 %      \endlist}
 %\makeatother
 %
-%\let\oldthebibliography\thebibliography
-%\let\endoldthebibliography\endthebibliography
-%\renewenvironment{thebibliography}[1]{
-%  \begin{oldthebibliography}{#1}
-%    \setlength{\itemsep}{.5em}
-%    \setlength{\parskip}{-0.2em}
-%}
-%{
-%  \end{oldthebibliography}
-%}
+\let\oldthebibliography\thebibliography
+\let\endoldthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]{
+  \begin{oldthebibliography}{#1}
+    \setlength{\itemsep}{.5em}
+    \setlength{\parskip}{-0.2em}
+}
+{
+  \end{oldthebibliography}
+}
 
 
+
+\usepackage{imakeidx}
+%\usepackage[xindy]{imakeidx}
+\makeindex[name=names,%
+	title={Indeks nazwisk},%
+	intoc,%
+	program=xindy,%
+	options=-C utf8 -L polish%
+]
+%\makeindex
+
+
+
+
+
+
+%---------hyperrefs---------------------------------
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{hyperref} %to nowsza wersja pakietu url, lepsza m.in. robie linki hyperref
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black, breaklinks=true, linktocpage}  %to sprawia że nie widać w pdfie aktywnych linków
+\urlstyle{rm}
+%---------------------------------------------------
 
 
 
@@ -202,7 +225,7 @@
 \stronatytulowa
 
 \tableofcontents
-\listoffigures
+%\listoffigures
 
 \cleardoublepage
 
@@ -232,21 +255,31 @@
 \include{5_podsumowanie.tex}
 
 
+
+
 %\part{Aspekt pozytywny}
 %\part{,,Pozytywna'' teologia negatywna}
 %\include{4_pozytywna.tex}
 
-%\include{_draft9.tex}
-%\include{_draft_bibliografia.tex}
 
-\include{nocite.tex}
 
+
+%\include{nocite.tex}
+%
 %%\interliniatextowa{.9}
 %\bibliographystyle{upjp2}
 %% ieeetr siam plain upjp2
 %\bibliography{doktorat_temp3}
 
 
+\include{biblliografia_manual.tex}
+
+
+\printindex[names]
+%\addcontentsline{toc}{chapter}{Indeks nazwisk}
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Spis rysunków}
 
 
 \end{document}
