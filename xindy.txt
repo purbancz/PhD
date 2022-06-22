@@ -1,6 +1,9 @@
 xindy -M texindy -M page-ranges -C utf8 -L polish names.idx
 
 
-\indexentry{Rambam|see{Majmonides, Mojżesz}}{127}
-\indexentry{Clemens, Samuel L.|see{Twain, Mark}}{154}
+\indexentry{Rambam|see{Majmonides, Mojżesz}}{126}
+\indexentry{Clemens, Samuel L.|see{Twain, Mark}}{153}
 \indexentry{Descartes, René|see{Kartezjusz}}{109}
+
+
+Uwaga: paatrz na strony, czy się zgadzają!

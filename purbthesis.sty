@@ -15,6 +15,7 @@
 \def\keysubject#1{\gdef\@keysubject{#1}}
 \def\keygeo#1{\gdef\@keygeo{#1}}
 \def\abstrakt#1{\gdef\@abstrakt{#1}}
+\def\titleaux#1{\gdef\@titleaux{#1}}
 
 
 
@@ -167,15 +168,15 @@
 	  
     \fi
 
-    %\vskip1.5in
+    \vskip2in
 
-    %\begin{flushright}
-    %    \begin{tabular}{l}
-    %    Praca \@praca \\
-    %    wykonana pod kierunkiem \\
-    %    \@promotordop \\
-    %    \end{tabular}
-    %\end{flushright}
+    \begin{flushright}
+        \begin{tabular}{l}
+        Praca \@praca \ 
+        wykonana pod kierunkiem \\
+        \@promotordop \\
+        \end{tabular}
+    \end{flushright}
 
 	\vfill
 
@@ -191,16 +192,19 @@
 \def\stronanumerdwa{%
 \thispagestyle{empty}
 	\section*{Opis bibliograficzny pracy}
-		\noindent \@author, \@title,
+		\noindent \@author, \@titleaux,
         praca \@praca\
         wykonana pod kierunkiem \@promotordop,
         \@miejsce,
         \@wydzial\ \@uczelniadop,
 		\@rok,
-        53  strony.
+        \pageref{end}  stron,
+        indeks osobowy, 5~ilustracji.
         %ew. tablice, ilustracje, aneksy
+        \vfill
     \section*{Abstrakt}
         \noindent \@abstrakt
+        \vfill
     \section*{Słowa kluczowe}
     \noindent \textbf{Imienne}:\\
     \@keyname
