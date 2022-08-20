@@ -3,6 +3,13 @@
 ### Piotr Urbańczyk
 PhD thesis in philosophy written under the supervision of Adam Olszewski
 
+    @phdthesis{urbanczyk2022wybrane,
+	  title={Wybrane logiczne aspekty teologii apofatycznej},
+	  author={Urbańczyk, Piotr},
+	  year={2022},
+	  school={Uniwersytet Papieski Jana Pawła II w Krakowie}
+	}
+
 #### Abtract
 
 The thesis is devoted to three logical aspects of apophatic theology—semantic, epistemic, and order-theoretic—which are presented in the light of three most common interpretations of this doctrine: theology of silence, theological skepticism and Neo-Platonically inspired mysticism. The aim of the study is to argue that the self-referential paradox is an inherent and inalienable property of apophatic theology, at least in the sense defined by the above-mentioned interpretations—self-reference has been diagnosed and identified in each of the logical aspects of apophatic doctrine. It has also been shown that the current attempts to save the apophatic theology from paradoxes should generally be regarded as unsatisfactory. The methods of analytic philosophy are applied. There are 225 bibliographical items used.
