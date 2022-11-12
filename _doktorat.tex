@@ -53,6 +53,44 @@
 \usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
 \AtBeginEnvironment{quote}{\small}% Step font down one size relative to current font.
 
+
+
+
+
+
+% ---------------- Licznik ilustracji ------------------
+
+\usepackage[figure]{totalcount}
+
+
+
+% --------------- Musi się znaleźć po etoolbox ---------
+
+%\newcounter{totfigures}
+%%\newcounter{tottables}
+%
+%\providecommand\totfig{} 
+%%\providecommand\tottab{}
+%
+%\makeatletter
+%\AtEndDocument{%
+%  \addtocounter{totfigures}{\value{figure}}%
+%%  \addtocounter{tottables}{\value{table}}%
+%  \immediate\write\@mainaux{%
+%    \string\gdef\string\totfig{\number\value{totfigures}}%
+%%    \string\gdef\string\tottab{\number\value{tottables}}%
+%  }%
+%}
+%\makeatother
+%
+%\pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}}{}{}
+%%\pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}\setcounter{table}{0}}{}{}
+
+% ------------------------------------------------------
+
+
+
+
 \makeatletter
 \renewcommand\small{%
 	\@setfontsize\small{11}{15}%

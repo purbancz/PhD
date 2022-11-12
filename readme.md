@@ -3,6 +3,13 @@
 ### Piotr Urbańczyk
 PhD thesis in philosophy written under the supervision of Adam Olszewski
 
+    @phdthesis{urbanczyk2022wybrane,
+	  title={Wybrane logiczne aspekty teologii apofatycznej},
+	  author={Urbańczyk, Piotr},
+	  year={2022},
+	  school={Uniwersytet Papieski Jana Pawła II w Krakowie}
+	}
+
 #### Abtract
 
 The thesis is devoted to three logical aspects of apophatic theology—semantic, epistemic, and order-theoretic—which are presented in the light of three most common interpretations of this doctrine: theology of silence, theological skepticism and Neo-Platonically inspired mysticism. The aim of the study is to argue that the self-referential paradox is an inherent and inalienable property of apophatic theology, at least in the sense defined by the above-mentioned interpretations—self-reference has been diagnosed and identified in each of the logical aspects of apophatic doctrine. It has also been shown that the current attempts to save the apophatic theology from paradoxes should generally be regarded as unsatisfactory. The methods of analytic philosophy are applied. There are 225 bibliographical items used.
@@ -17,7 +24,7 @@ I  investigate  three  different  interpretations  of  apophatic  doctrine  high
 
 The most prevalent interpretation of negative theology emphasizes the transcendence of God in the context of language. Shortly  speaking,  this  theory  claims  that  God  is  completely  unspeakable,  inexpressible,  and  ineffable.  In the  first  part  of  my  thesis,  I  reveal  that  the  paradox  lying  underneath  this  theory  has a self-referential  structure  characteristic  to  well-known  semantic  paradoxes.  I  also  analyze several  attempts  to  save the “theology  of  silence”  from  being  inconsistent.  My analysis suggests that these attempts are rather unsuccessful.
 
-Another interpretation of negative theology shifts emphasis form speech to thoughts and  form  language  to  knowledge.  Its  central  claim  is  the  thesis  that  God  is  utterly  unknowable,  inconceivable,  and  incomprehensible.  At  first  glance the “theological  skepticism”  appears  to  be  the  same  as  (or  very  similar  to)  theology  of  silence.  There  are  some  reasons  to  believe  that  at  least  one  of  them  implies  the other. In the second part of the thesis, I argue, however, that they cannot be thought as equivalent. I  attempt  to  support  my  claims  with  the  arguments  form  philosophy  and  cognitive  science.  I use epistemic modal logic to demonstrate self-referential nature  of  theological  skepticism  showing  that  its  formal  reconstruction  takes  the  form of well-known epistemic paradoxes: Moore’s problem, the Church-Fitch knowability paradox and  so-called  knower’s  paradox.
+Another interpretation of negative theology shifts emphasis from speech to thoughts and  from  language  to  knowledge.  Its  central  claim  is  that  God  is  utterly  unknowable,  inconceivable,  and  incomprehensible.  At  first  glance the “theological  skepticism”  appears  to  be  the  same  as  (or  very  similar  to)  the  theology  of  silence.  There  are  some  reasons  to  believe  that  at  least  one  of  them  implies  the other. In the second part of the thesis, I argue, however, that they cannot be thought as equivalent. I  attempt  to  support  my  claims  with  the  arguments  form  philosophy  and  cognitive  science.  I use epistemic modal logic to demonstrate self-referential nature  of  theological  skepticism  showing  that  its  formal  reconstruction  takes  the  form of well-known epistemic paradoxes: Moore’s problem, the Church-Fitch knowability paradox and  so-called  knower’s  paradox.
 
 It is often emphasized that negative theology is a legacy of Platonic and Neo-Platonic philosophy, at least in the western tradition. This  idea  is  the  foundation  for  the  third  interpretation  of  negative  theology—as  a “Neo-Platonically  inspired  mysticism”.  It  provides  me  with  an  excuse  to  describe  and  discuss a  formal  reconstruction  of  this  doctrine  that  utilizes  the  power  set  algebra.  In  the  third  part  of  the  thesis,  I  investigate  the  conditions under which such a structure produces paradox in the sense of Russell’s antinomy.
 
