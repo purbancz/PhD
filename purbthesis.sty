@@ -194,6 +194,53 @@
 
 
 
+% ----------------- Formatowanie strony tytułowej 2 ----------------------
+\def\stronatytulowaalt{%
+\thispagestyle{empty}
+%	\begin{center}
+%		\MakeUppercase{\@uczelnia} \\
+%		\MakeUppercase{\@wydzial}
+%	\end{center}
+%
+	\null\vskip3in
+
+
+	\begin{center}
+		\hyphenpenalty=10000\Large\textsc{\@title}
+	\end{center}
+
+	\vskip0.5in
+
+	\begin{center}
+		\large\rm\@author
+	\end{center}
+	\ifdraft@mode
+	  \vskip1.5in \begin{center} \Large DRAFT\\ \large Wydrukowano \today \\
+%	  \version
+	  v.0.\therun b
+	  \end{center}
+	  
+    \fi
+
+%    \vskip2in
+%
+%    \begin{flushright}
+%        \begin{tabular}{l}
+%        Praca \@praca \ 
+%        wykonana pod kierunkiem \\
+%        \@promotordop \\
+%        \end{tabular}
+%    \end{flushright}
+
+	\vfill
+
+		\begin{center}
+		\rm \@miejsce\ \@rok
+	\end{center}\newpage}
+%-----------------------------------------------------------------------
+
+
+
 
 % ----------------- Formatowanie strony nr2 ----------------------
 \def\stronanumerdwa{%
@@ -222,6 +269,10 @@
 	\newpage
 }
 %-----------------------------------------------------------------------
+
+
+
+
 
 
 %-------------------Oswiadczenie 1--------------------------------------
