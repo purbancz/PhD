@@ -1,5 +1,7 @@
 \documentclass[12pt,a4paper,oneside,leqno,titlepage]{report}
 
+%\pagestyle{plain}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -220,6 +222,8 @@ mereologia, algebra zbioru potęgowego, negacja, predykacja, rekonstrukcja logic
 
 
 
+
+
 %\makeatletter
 %\renewcommand\@biblabel[1]{}
 %\renewenvironment{thebibliography}[1]
@@ -284,6 +288,12 @@ mereologia, algebra zbioru potęgowego, negacja, predykacja, rekonstrukcja logic
 
 
 
+%\usepackage{idxlayout}
+%\indexsetup{level=\section*,toclevel=section,noclearpage}
+
+
+
+
 
 %---------hyperrefs---------------------------------
 \usepackage[hyphens,spaces,obeyspaces]{url}
@@ -293,7 +303,7 @@ mereologia, algebra zbioru potęgowego, negacja, predykacja, rekonstrukcja logic
 %---------------------------------------------------
 
 
-
+\usepackage{bookmark}
 
 
 
@@ -347,6 +357,9 @@ mereologia, algebra zbioru potęgowego, negacja, predykacja, rekonstrukcja logic
 
 \include{3_neoplatonizm.tex}
 
+%-------------------
+\bookmarksetup{startatroot}
+%-------------------
 
 \include{5_podsumowanie.tex}
 
@@ -368,8 +381,20 @@ mereologia, algebra zbioru potęgowego, negacja, predykacja, rekonstrukcja logic
 %\bibliography{doktorat_temp3}
 
 
+
+
+
+
 \include{biblliografia_manual.tex}
 
+
+
+%\renewcommand*{\preindexhook}{%
+%  W~indeksie pominięto nazwiska zawarte w~odwołaniach bibliograficznych.\par
+%  \indexspace
+%}
+
+\indexprologue{\noindent W~indeksie pominięto nazwiska zawarte w~odwołaniach bibliograficznych.}
 
 \printindex[names]
 %\addcontentsline{toc}{chapter}{Indeks nazwisk}
