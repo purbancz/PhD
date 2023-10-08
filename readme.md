@@ -10,6 +10,11 @@ PhD thesis in philosophy written under the supervision of Adam Olszewski
 	  school={Uniwersytet Papieski Jana Pawła II w Krakowie}
 	}
 
+
+My thesis explores logical aspects of a peculiar theory of ineffable and unknowable objects. To gain a deeper understanding of my research, I invite you to peruse the [abstract](#Abtract) or delve into the [extended abstract](#Extended-abstract) provided below.
+
+[![github](https://img.shields.io/badge/GitHub-purbancz-181717.svg?style=flat&logo=github)](https://github.com/purbancz) [![twitter](https://img.shields.io/badge/Twitter-@purbancz-00aced.svg?style=flat&logo=twitter)](https://twitter.com/purbancz) [![linkedin](https://img.shields.io/badge/LinkedIn-Piotr_Urbańczyk-00aced.svg?style=flat&logo=linkedin)](https://www.linkedin.com/in/piotr-urba%C5%84czyk-9943ab17a/) [![website](https://img.shields.io/badge/Website-Piotr_Urbańczyk-5087B2.svg?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGQ9Ik0gMTIgMi4wOTk2MDk0IEwgMSAxMiBMIDQgMTIgTCA0IDIxIEwgMTAgMjEgTCAxMCAxNCBMIDE0IDE0IEwgMTQgMjEgTCAyMCAyMSBMIDIwIDEyIEwgMjMgMTIgTCAxMiAyLjA5OTYwOTQgeiIgZmlsbD0iI2ZmZiI+PC9wYXRoPgo8L3N2Zz4=)](https://www.copernicuscenter.edu.pl/en/person/urbanczyk-piotr-2/)
+
 #### Abtract
 
 The thesis is devoted to three logical aspects of apophatic theology—semantic, epistemic, and order-theoretic—which are presented in the light of three most common interpretations of this doctrine: theology of silence, theological skepticism and Neo-Platonically inspired mysticism. The aim of the study is to argue that the self-referential paradox is an inherent and inalienable property of apophatic theology, at least in the sense defined by the above-mentioned interpretations—self-reference has been diagnosed and identified in each of the logical aspects of apophatic doctrine. It has also been shown that the current attempts to save the apophatic theology from paradoxes should generally be regarded as unsatisfactory. The methods of analytic philosophy are applied. There are 225 bibliographical items used.
